@@ -1,0 +1,67 @@
+/* CakeGame.css */
+
+.cake-container {
+    width: 150px;
+    height: 200px;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.5s;
+  }
+  
+  .cake {
+    width: 80px;
+    height: 80px;
+    background-color: #ff1493;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .cake-container.cut {
+    background-color: #f9e3e3;
+  }
+  
+  .cake-container.cut .cake {
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    transform: rotate(360deg) scale(0);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    background-color: #ff1493;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  

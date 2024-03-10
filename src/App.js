@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// Home.js
 
+import React from 'react';
+import './App.css';
+import img1 from './img1.jpg';
+import img2 from './img2.jpg'
+import CakeGame from './CakeGame';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="home">
+    
+      <div className="message-container">
+        <h2>Happy Womens day!</h2>
+        <p className="love-message">
+          Bit late, I was skeptical about this
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p className="virtual-message">
+          I've created this virtual celebration just for you! Click the pink circle
+        </p>
+        <CakeGame/>
+      </div>
+      <div className="image-container">
+        <img src={img1} alt="" />
+        <img src={img2} alt="" />
+      </div>
+     
     </div>
   );
 }
